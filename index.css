@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(37, 33, 44);
+    min-height: 100vh;
+}
+.root{
+    width: 100%;
+    height: 100vh;
+}
+
+.tradePrice{   
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tradePrice h1{
+    letter-spacing: .5em;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+}
+.tradePrice h1 a{
+    text-decoration: none;
+}
+.tradePrice p{
+    letter-spacing: .075em;
+
+}
