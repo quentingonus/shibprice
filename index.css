@@ -30,14 +30,13 @@ body {
     width: 10vw;
     height: 10vw;
     transform: translateX(-1.2vw);
-    margin-bottom: 6.5vh;
+    margin-bottom: .3.5vh;
 }
 
 .tradePrice h1 {
     letter-spacing: 0.25em;
     color: white;
     font-size: 4vw;
-    padding-bottom: 6.5vh;
     display: flex;
     align-items: center;
 }
@@ -50,6 +49,7 @@ body {
 .tradePrice p {
     letter-spacing: 0.075em;
     font-size: 7vw;
+    margin-bottom: 5vh;
 }
 
 .binance {
@@ -59,13 +59,32 @@ body {
     padding: .8vw;
     /* padding: .8vw .3vw .8vw 1vw; */
     color: #f3ba2f;
-    border: 3px solid #f3ba2f;
+    border: 3px solid rgba(68, 63, 73, 0.8);
     border-radius: 6px;
     transform: translateX(30vw);
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: 1s;
+}
+
+.binance::before{
+    content: '';
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height: 100%;
+    background-color: rgba(68, 63, 73, 0.4);
+    transition: 1s;
+}
+
+.binance:hover::before{
+    background-color: rgba(255, 174, 0, 0);
+}
+.binance:hover{    
+    border: 3px solid #f3ba2f;
 }
 
 .binance .bsc{
