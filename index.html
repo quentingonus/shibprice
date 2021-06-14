@@ -11,9 +11,10 @@
 
 <body>
     <div class="root">
-        <div class="tradePrice" v-if="lastTrade">
-            <h1 :style="{ fontSize:fontSize/4.5+'px' }"><a href="https://www.shibatoken.com/">SHIB</a> | USDT</h1>
-            <p :style="{ color:priceColor, fontSize:fontSize+'px' }">{{ lastTrade[0].price }}</p>
+        <div class="tradePrice" v-if="connection">
+            <h1 :style="{ fontSize:fontSize/4.5+'px' }"><a href="https://www.shibatoken.com/" target="_blank">SHIB</a> |
+                USDT</h1>
+            <p :style="{ color:priceColor, fontSize:fontSize+'px' }">{{ currentPrice }}</p>
             <!-- <h2>Balance</h2>
             <p>{{ shibBalance }} SHIB</p>
             <p>~ {{ lastTrade[0].price * shibBalance }} USD</p> -->
