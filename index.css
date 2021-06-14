@@ -1,36 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-*{
-    margin:0;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: rgb(37, 33, 44);
+
+body {
+    background-color: rgb(39, 15, 15);
     min-height: 100vh;
 }
-.root{
+
+.root {
     width: 100%;
     height: 100vh;
 }
 
-.tradePrice{   
+.tradePrice {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-family: "Poppins", sans-serif;
 }
 
-.tradePrice h1{
-    letter-spacing: .5em;
-    color:white;
-    font-family: 'Poppins', sans-serif;
+.tradePrice .shiba {
+    width: 10vw;
+    height: 10vw;
+    transform: translateX(-1.2vw);
+    margin-bottom: 6.5vh;
 }
-.tradePrice h1 a{
+
+.tradePrice h1 {
+    letter-spacing: 0.25em;
+    color: white;
+    font-size: 4vw;
+    padding-bottom: 6.5vh;
+    display: flex;
+    align-items: center;
+}
+
+.tradePrice h1 a {
     text-decoration: none;
+    color: rgb(255, 195, 82);
 }
-.tradePrice p{
-    letter-spacing: .075em;
 
+.tradePrice p {
+    letter-spacing: 0.075em;
+    font-size: 7vw;
+}
+
+.binance {
+    position: absolute;
+    font-size: 1.2vw;
+    letter-spacing: 0.5em;
+    padding: .8vw;
+    /* padding: .8vw .3vw .8vw 1vw; */
+    color: #f3ba2f;
+    border: 3px solid #f3ba2f;
+    border-radius: 6px;
+    transform: translateX(30vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.binance .bsc{
+    width: 2vw;
+    height: 2vw;
+    margin-right:.75vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .tradePrice .shiba {
+        width: 20vh;
+        height: 20vh;
+    }
+
+    .tradePrice h1 {
+        font-size: 4vh;
+    }
+
+    .tradePrice p {
+        font-size: 7vh;
+    }
+
+    .binance {
+        font-size: 1.7vh;
+        transform: translateX(30vh);
+        border: 1.5px solid white;
+        padding: .8vh;
+        letter-spacing: 0.2em;
+    }
+    
+.binance .bsc{
+    width: 2vh;
+    height: 2vh;
+    margin-right:.75vh;
+}
 }

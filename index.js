@@ -32,6 +32,9 @@ new Vue({
             this.currentPrice = JSON.parse(event.data).p;
             this.priceColor = !this.prevPrice || this.prevPrice === this.currentPrice ? "rgb(168, 158, 158)" : this.currentPrice > this.prevPrice ? "green" : "red";
             this.prevPrice = this.currentPrice;
+        },
+        gotobinance() {
+            window.open("https://www.binance.com/en/trade/SHIB_USDT?type=spot", '_blank');
         }
     },
     created() {
