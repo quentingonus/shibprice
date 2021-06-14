@@ -69,28 +69,29 @@ body {
     transition: 1s;
 }
 
-.binance::before{
+.binance::before {
     content: '';
     position: absolute;
-    left:0;
-    top:0;
-    width:100%;
+    left: 0;
+    top: 0;
+    width: 100%;
     height: 100%;
     background-color: rgba(68, 63, 73, 0.4);
     transition: 1s;
 }
 
-.binance:hover::before{
+.binance:hover::before {
     background-color: rgba(255, 174, 0, 0);
 }
-.binance:hover{    
+
+.binance:hover {
     border: 3px solid #f3ba2f;
 }
 
-.binance .bsc{
+.binance .bsc {
     width: 2vw;
     height: 2vw;
-    margin-right:.75vw;
+    margin-right: .75vw;
 }
 
 @media only screen and (max-width: 600px) {
@@ -108,16 +109,20 @@ body {
     }
 
     .binance {
-        font-size: 1.7vh;
-        transform: translateX(30vh);
-        border: 1.5px solid white;
+        font-size: 1.4vh;
+        transform: translateX(29vh);
+        border: 0.7px solid white;
         padding: .8vh;
-        letter-spacing: 0.2em;
+        letter-spacing: 0.1em;
     }
-    
-.binance .bsc{
-    width: 2vh;
-    height: 2vh;
-    margin-right:.75vh;
-}
+
+    .binance:hover {
+        border: 0.7px solid #f3ba2f;
+    }
+
+    .binance .bsc {
+        width: 2vh;
+        height: 2vh;
+        margin-right: .75vh;
+    }
 }
